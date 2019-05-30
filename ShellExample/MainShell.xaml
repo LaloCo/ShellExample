@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:ShellExample"
+       x:Class="ShellExample.MainShell">
+    <ShellItem Route="First"
+               Title="Example"
+               Icon="main.png">
+        <ShellContent Route="Main"
+                      Title="Main"
+                      Icon="main.png">
+            <local:MainPage/>
+        </ShellContent>
+        <ShellContent Route="Secondary"
+                      Title="Secondary"
+                      Icon="sec.png">
+            <local:SecondaryPage/>
+        </ShellContent>
+    </ShellItem>
+    <ShellItem Route="Second"
+               Title="Another one"
+               Icon="sec.png"
+               FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Route="Secondary"
+                      Title="Secondary"
+                      Icon="sec.png">
+            <local:SecondaryPage/>
+        </ShellContent>
+        <ShellContent Route="Main"
+                      Title="Main"
+                      Icon="main.png">
+            <local:MainPage/>
+        </ShellContent>
+    </ShellItem>
+    <ShellItem Route="Third"
+               Title="Third element"
+               Icon="main.png">
+        <ShellSection Route="Section">
+            <ShellContent Route="Main"
+                          Title="Main"
+                          Icon="main.png">
+                <local:MainPage/>
+            </ShellContent>
+            <ShellContent Route="Secondary"
+                          Title="Secondary"
+                          Icon="sec.png">
+                <local:SecondaryPage/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+</Shell>
