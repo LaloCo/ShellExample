@@ -14,8 +14,8 @@ namespace ShellExample
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            Shell.Current.Navigation.PopAsync();
-            // Shell.Current.Navigation.PopModalAsync();
+            //// Shell.Current.Navigation.PopAsync();
+            Shell.Current.Navigation.PopModalAsync();
         }
     }
 }

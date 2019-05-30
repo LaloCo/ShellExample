@@ -14,8 +14,8 @@ namespace ShellExample
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            Shell.Current.GoToAsync("login");
-            // Shell.Current.Navigation.PushModalAsync(new LoginPage());
+            //// Shell.Current.GoToAsync("login");
+            Shell.Current.Navigation.PushModalAsync(new LoginPage());
         }
     }
 }
