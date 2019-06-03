@@ -20,7 +20,8 @@ namespace ShellExample
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            Shell.Current.GoToAsync("//Third/Section/Secondary");
+            string entry = entryEntry.Text;
+            Shell.Current.GoToAsync($"//Third/Section/Secondary?entry={entry}");
         }
     }
 }

@@ -5,8 +5,17 @@ using Xamarin.Forms;
 
 namespace ShellExample
 {
+    [QueryProperty("Entry", "entry")]
     public partial class SecondaryPage : ContentPage
     {
+        public string Entry
+        {
+            set
+            {
+                textLabel.Text = Uri.UnescapeDataString(value);
+            }
+        }
+
         public SecondaryPage()
         {
             InitializeComponent();

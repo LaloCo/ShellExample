@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShellExample.SecondaryPage">
     <StackLayout>
-        <Label Text="This is another page."
+        <Label x:Name="textLabel"
+               Text="This is another page."
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand" />
         <Button Text="Login"

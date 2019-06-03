@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ShellExample"
              x:Class="ShellExample.MainPage">
-    <StackLayout>
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 Margin="16,0">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+        <Label Text="Welcome to Xamarin.Forms!" />
+        <Entry x:Name="entryEntry"
+               Placeholder="Type anything..."/>
         <Button Text="Go to top tabs secondary"
                 Clicked="Handle_Clicked"/>
     </StackLayout>
